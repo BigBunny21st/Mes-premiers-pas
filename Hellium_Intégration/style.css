@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
     font-family: "Inter Tight", sans-serif;
     color: var(--color4);
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -27,9 +27,9 @@ body {
 nav {
     height: 100px;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     background: var(--color1);
-    top: 20px;
+    top: 7px;
     font-size: 20px;
     position: absolute;
 
@@ -62,4 +62,16 @@ nav {
     height: 10px;
     width: 150px;
     margin: 10px;
+}
+
+.headerbox {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    left: 50px;
+}
+
+.infos {
+    display: flex;
+    grid-template-columns: 50% 50%;
+    left: 50px;
 }
