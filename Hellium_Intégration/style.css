@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color1: rgb(29, 29, 29);
+    --color2: rgb(70, 76, 255);
+    --color3: rgb(10, 206, 130);
+    --color4: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color1) center/cover;
+    min-height: 100vh;
+    font-family: "Inter Tight", sans-serif;
+    color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    background: var(--color1);
+    top: 20px;
+    font-size: 20px;
+    position: absolute;
+
+}
+
+.flexbox {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    left: 50px;
+
+}
+
+.marque {
+    padding: 0;
+    display: flex;
+    position: relative;
+    right: 30px;
+}
+
+.menu ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    position: relative;
+    right: 10px;
+}
+
+.menu li {
+    height: 10px;
+    width: 150px;
+    margin: 10px;
+}
