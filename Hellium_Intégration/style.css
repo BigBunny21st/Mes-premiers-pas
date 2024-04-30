@@ -98,6 +98,7 @@ h1 {
     position: relative;
     user-select: none;
     margin-bottom: 20px;
+
 }
 
 .header-left {
@@ -162,10 +163,15 @@ h1 {
 
 }
 
+.btn-container button:hover {
+    background: var(--color3);
+    scale: 1.1;
+    transition: 0.8s;
+}
+
 button {
     scale: 1.05;
     height: 25px;
-
 }
 
 .infos-left {
