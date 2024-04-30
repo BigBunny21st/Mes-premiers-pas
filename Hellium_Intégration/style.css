@@ -93,7 +93,7 @@ h1 {
 }
 
 .header-left-container h2 {
-    font-size: 28px;
+    font-size: 33px;
     color: rgb(75, 76, 236);
     position: relative;
     user-select: none;
@@ -135,6 +135,39 @@ h1 {
     bottom: 10px;
 }
 
+.btn-container {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+
+.btn-container button {
+
+    min-height: 40px;
+    min-width: 160px;
+    background: rgb(70, 77, 254);
+    color: white;
+    width: 80px;
+    margin: 10px;
+    left: 10px;
+    border-radius: 13px;
+    font-size: 15px;
+    font-family: "Inter Tight", sans-serif;
+    border-width: 0;
+    font-size: medium;
+    padding: 0;
+
+}
+
+button {
+    scale: 1.05;
+    height: 25px;
+
+}
+
 .infos-left {
     padding: 10px;
     width: 100%;
@@ -151,6 +184,9 @@ h1 {
     right: 5px;
 }
 
+h3 {
+    font-size: 22px;
+}
 
 .img-container {
     padding: 1px;
