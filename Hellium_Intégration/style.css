@@ -1,217 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-    --color1: rgb(29, 29, 29);
-    --color2: rgb(70, 76, 255);
-    --color3: rgb(10, 206, 130);
-    --color4: rgb(255, 255, 255);
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Saira+Condensed:wght@500&display=swap");
 
 * {
+    font-family: "Inter", sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
 body {
-    background: var(--color1) center/cover;
     min-height: 100vh;
-    font-family: "Inter Tight", sans-serif;
-    color: var(--color4);
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    background: rgb(29, 29, 29);
+    color: rgb(250, 250, 250);
 }
 
 nav {
-    height: 100px;
-    width: 100%;
-    padding: 15px;
-    background: var(--color1);
-    top: 7px;
-    font-size: 20px;
-    position: absolute;
-
-}
-
-.flexbox {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    left: 50px;
-
-}
-
-.marque {
-    padding: 0;
-    display: flex;
-    position: relative;
-    right: 30px;
-}
-
-.menu ul {
-    padding: 0;
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
-    position: relative;
-    right: 10px;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-.menu li {
-    height: 10px;
-    width: 150px;
-    margin: 10px;
+nav ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
 }
 
-.headerbox {
-    display: grid;
-    width: 100%;
-    padding: 0;
-    position: absolute;
-    right: 10px;
-    grid-template-columns: 50% 50%;
-    left: 35px;
-    top: 150px;
-}
-
-h1 {
-    font-size: 90px;
-    position: relative;
-    user-select: none;
-    margin-bottom: 20px;
-
-}
-
-.header-left-container {
-    padding: 30px;
-    width: 100%;
-    display: block;
-    position: relative;
-    right: 30px;
-    margin-top: 170px;
-}
-
-.header-left-container h2 {
-    font-size: 33px;
-    color: rgb(75, 76, 236);
-    position: relative;
-    user-select: none;
-    margin-bottom: 20px;
-
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
 }
 
 .header-left {
-    padding: 30px;
-    width: 100%;
-    display: block;
-    position: relative;
-    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.header-left-container h3 {
+    color: #474dff;
+    font-size: 1.8rem;
 }
 
 .header-right {
-    padding: 30px;
-    display: flex;
-    position: relative;
-    right: 15px;
+    width: 50%;
 }
 
-.header-right img {
+#modem {
     width: 100%;
-    height: 100%;
-    position: relative;
-    justify-content: center;
-
 }
 
 .infos {
-    display: grid;
-    background-color: black;
-    border-radius: 10px;
-    width: 99.5%;
-    padding: 8px;
-    position: absolute;
-    grid-template-columns: 35% 65%;
-    left: 8px;
-    bottom: 10px;
-}
-
-.btn-container {
-    padding: 0;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-top: 10px;
-
-}
-
-.btn-container button {
-
-    min-height: 40px;
-    min-width: 160px;
-    background: rgb(70, 77, 254);
-    color: white;
-    width: 80px;
-    margin: 10px;
-    left: 10px;
-    border-radius: 13px;
-    font-size: 15px;
-    font-family: "Inter Tight", sans-serif;
-    border-width: 0;
-    font-size: medium;
-    padding: 0;
-
-}
-
-.btn-container button:hover {
-    background: var(--color3);
-    scale: 1.1;
-    transition: 0.8s;
-}
-
-button {
-    scale: 1.05;
-    height: 25px;
+    background: rgb(10, 10, 10);
+    border-radius: 10px;
 }
 
 .infos-left {
-    padding: 10px;
-    width: 100%;
-    display: block;
-    position: relative;
-    right: 5px;
+    width: 33%;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+button {
+    border: none;
+    background: #474dff;
+    color: white;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: rgb(0, 218, 127);
+    scale: 1.05;
+    transition: 0.8s;
+    cursor: pointer;
 }
 
 .infos-right {
-    padding: 10px;
-    width: 100%;
-    display: block;
-    position: relative;
-    right: 5px;
+    width: 67%;
 }
 
-h3 {
-    font-size: 22px;
+.investors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
 }
 
 .img-container {
-    padding: 1px;
-    width: 100%;
     display: flex;
     align-items: center;
-    position: relative;
-    right: 10px;
-    justify-content: space-between;
-
-
+    justify-content: space-around;
+    width: 100%;
 }
 
-.infos-right img {
-
-    height: 100%;
-    scale: 0.4;
-    display: block;
-    justify-content: center;
-    align-items: center;
-
+.img-container img {
+    height: 60px;
 }
