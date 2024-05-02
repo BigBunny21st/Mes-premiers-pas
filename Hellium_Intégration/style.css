@@ -259,6 +259,50 @@ button:hover {
 }
 
 
+/*******************MEDIA QUERI*****************/
+
+@media screen and (max-width: 850px) {
+    nav {
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 710px) {
+    nav ul {
+
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 835px) {
+
+    .header {
+
+        grid-template-rows: auto;
+
+    }
+}
+
+@media screen and (max-width: 710px) {
+
+    .infos {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        transition: 10s;
+
+
+
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+}
 
 
 
