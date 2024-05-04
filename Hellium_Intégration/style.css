@@ -249,7 +249,6 @@ button:hover {
 
 .img-container {
     display: flex;
-    align-items: center;
     justify-content: space-around;
     width: 100%;
 }
@@ -261,49 +260,80 @@ button:hover {
 
 /*******************MEDIA QUERI*****************/
 
-@media screen and (max-width: 850px) {
-    nav {
-        flex-direction: column;
+@media screen and (max-width: 870px) {
 
-    }
-}
-
-@media screen and (max-width: 710px) {
-    nav ul {
-
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 835px) {
-
-    .header {
-
-        grid-template-rows: auto;
-
-    }
-}
-
-@media screen and (max-width: 710px) {
-
-    .infos {
-
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 100%;
-        transition: 10s;
-
-
-
+    h1 {
+        font-size: 2.5rem;
     }
 
-    h3 {
+    .header-left-container h2 {
         font-size: 1rem;
     }
+
 }
 
+
+@media screen and (max-width: 620px) {
+
+    nav {
+        display: grid;
+        grid-template-columns: 35% 65%;
+
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 100%;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .infos {
+        display: block;
+
+    }
+
+
+    .infos-left {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .infos-left h3 {
+        font-size: 0.93rem;
+    }
+
+    .btn-container {
+
+        display: block;
+        margin: 0 auto;
+
+    }
+
+
+
+    .infos-right {
+        display: block;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .infos-right h3 {
+        font-size: 0.93rem;
+
+
+    }
+
+    .img-container img {
+        height: 40px;
+    }
+}
 
 
 /*.infos {
